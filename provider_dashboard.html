@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provider Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .header .icons {
+            display: flex;
+            gap: 20px;
+        }
+        .section {
+            margin-top: 20px;
+        }
+        .section h2 {
+            margin-bottom: 10px;
+        }
+        .auction, .bid, .quick-action, .performance {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+        }
+        .auction .bid-now, .bid .status, .quick-action, .performance {
+            float: right;
+            background-color: #007bff;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .quick-action, .performance {
+            background-color: #28a745;
+            float: none;
+            display: inline-block;
+        }
+        .auction .bid-price {
+            color: #555;
+            font-weight: bold;
+        }
+        .section h3 {
+            margin-top: 20px;
+            color: #333;
+        }
+        .percent-booking {
+            font-size: 14px;
+            color: #555;
+            float: right;
+        }
+        .icon {
+            margin-left: 10px;
+        }
+        .bid .details {
+            font-size: 14px;
+            color: #555;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Provider Dashboard</h1>
+            <div class="icons">
+                <a href="#">Notifications</a>
+                <a href="#">Settings</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Ongoing Auctions</h2>
+            <h3>Tomorrow <span class="percent-booking">(50% Booked)</span></h3>
+            <div class="auction">
+                <strong>Men's Haircut - medium length</strong>
+                <a href="#" class="bid-now">Bid Now</a>
+                <p class="bid-price">Bid Price: 50 Currency</p>
+                <p class="details">Suitable Arrival Time: 14H-16H</p>
+            </div>
+            <div class="auction">
+                <strong>Women's Styling - straightening</strong>
+                <a href="#" class="bid-now">Bid Now</a>
+                <p class="bid-price">Bid Price: 75 Currency</p>
+                <p class="details">Suitable Arrival Time: 10H-12H</p>
+            </div>
+            <h3>Day After Tomorrow <span class="percent-booking">(30% Booked)</span></h3>
+            <div class="auction">
+                <strong>Men's Haircut - short length</strong>
+                <a href="#" class="bid-now">Bid Now</a>
+                <p class="bid-price">Bid Price: 40 Currency</p>
+                <p class="details">Suitable Arrival Time: 9H-11H</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Your Bids</h2>
+            <div class="bid">
+                <strong>Bid: Leading - Men's Haircut</strong>
+                <span class="status">Leading</span>
+                <p class="details">Date: Tomorrow | Time: 14:30 | Option: Medium Haircut</p>
+                <p class="bid-price">Bid Price: 50 Currency</p>
+            </div>
+            <div class="bid">
+                <strong>Bid: Won - Women's Styling</strong>
+                <span class="status">Won</span>
+                <p class="details">Date: Tomorrow | Time: 10:00 | Option: Straightening</p>
+                <p class="bid-price">Final Price: 75 Currency</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Quick Actions</h2>
+            <div class="quick-action">New Auction Alert</div>
+            <div class="quick-action">Calendar</div>
+            <div class="quick-action">Messages</div>
+        </div>
+
+        <div class="section">
+            <h2>Performance Overview</h2>
+            <div class="performance">Earnings: 1250 Currency</div>
+            <div class="performance">Bid Success Rate: 75%</div>
+        </div>
+    </div>
+</body>
+</html>
